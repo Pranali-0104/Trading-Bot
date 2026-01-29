@@ -17,8 +17,18 @@ Before any order is sent, the bot performs a pre-flight analysis using the live 
 This mimics real-world trading systems that protect against fat-finger errors and unsafe trades.
 
 ## Setup
+
+Steps to run the code:
+
+git clone …
+cd trading_bot
 python -m venv venv
-source venv/bin/activate  # windows: venv\Scripts\activate
+source venv/bin/activate
 pip install -r requirements.txt
+export BINANCE_API_KEY=…
+export BINANCE_API_SECRET=…
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.003
+
+
 
 
